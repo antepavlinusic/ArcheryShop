@@ -1,0 +1,48 @@
+﻿<!-- wwwroot/categories.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Categories - Archery Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manage Categories</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="users.html">Manage Users</a>
+        <a href="products.html">Manage Products</a>
+    </nav>
+
+    <h2>Category List</h2>
+    <table id="categoriesTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Categories will be populated here -->
+        </tbody>
+    </table>
+
+    <h2>Add / Edit Category</h2>
+    <form id="categoryForm">
+        <input type="hidden" id="categoryId">
+        <label>
+            Name:
+            <input type="text" id="categoryName" required>
+        </label><br>
+        <label>
+            Description:
+            <input type="text" id="categoryDescription">
+        </label><br>
+        <button type="submit">Save Category</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

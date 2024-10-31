@@ -1,0 +1,64 @@
+﻿<!-- wwwroot/products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Products - Archery Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Manage Products</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="users.html">Manage Users</a>
+        <a href="categories.html">Manage Categories</a>
+    </nav>
+
+    <h2>Product List</h2>
+    <table id="productsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Products will be populated here -->
+        </tbody>
+    </table>
+
+    <h2>Add / Edit Product</h2>
+    <form id="productForm">
+        <input type="hidden" id="productId">
+        <label>
+            Name:
+            <input type="text" id="productName" required>
+        </label><br>
+        <label>
+            Description:
+            <input type="text" id="productDescription">
+        </label><br>
+        <label>
+            Price:
+            <input type="number" id="productPrice" step="0.01" required>
+        </label><br>
+        <label>
+            Stock:
+            <input type="number" id="productStock" required>
+        </label><br>
+        <label>
+            Category:
+            <select id="productCategoryId" required>
+                <!-- Categories will be populated here -->
+            </select>
+        </label><br>
+        <button type="submit">Save Product</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
